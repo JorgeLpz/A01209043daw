@@ -38,17 +38,22 @@ function suma() {
 		- 	Math.floor: devulve el valor de abajo en caso de tener numero decimal
 		-	Math.random: sirve para obtner un numero random*/
 	//Variable que tenga la solucion
+	let tiempo1 = new Date();
 	let alnum = Math.floor(Math.random()*10);
 	let alenum = Math.floor(Math.random()*10);
 	let numero = prompt("Cual es el Resultado de 2 numeros aleatorios de un rango de [1 - 10] : "+alnum+" + "+alenum);
+	let tiempo2 = new Date();
+	let sec = tiempo2 - tiempo1;
+	let diff = Math.floor(sec / 1000);
+	let seg = diff % 60;
 
 	for (var i = 8; i >= 0; i--) {
 		if (numero == alenum+alnum) {
-			alert("Felicidades has adivinado el numero");
+			alert("Felicidades has adivinado el numero"+seg);
 			i = 0;
 		}
 		else{
-		numero = prompt("Fallaste, Intenta de Nuevo, 2 numeros aleatorios de un rango de [1 - 10] : "+alnum+" + "+alenum);
+		numero = prompt("Fallaste, Intenta de Nuevo, 2 numeros aleatorios de un rango de [1 - 10] : "+alnum+" + "+alenum+" "+seg);
 		alnum = Math.floor(Math.random()*10);
 		alenum = Math.floor(Math.random()*10);
 		}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tienda</title>
+</head>
+
+<LINK REL=StyleSheet HREF="estilos.css" TYPE="text/css" MEDIA=screen>
+
+<body>
+         <header>
+        <div class="datos">
+            <p>Nombre: Jorge Andrés López Chávez</p>
+            <p>Correo: jorge.lopezch@outlook.com</p>
+            <p>Matricula: A01209043</p>
+        </div>
+        
+        <div>
+            <h1>Laboratorio 5 Javascript y Objetos</h1>
+        </div>
+        
+         <nav class="navbar navbar-inverse navbar-fixed-top">
+                <ul>
+                    <li><a href="tienda.html">Tienda de Videojuegos</a></li>
+                    <li><a href="preguntas.html">Cuestionario de Laboratorio</a></li>
+                    <li><a href="preguntas.html">Ejercicio Libre</a></li>
+                </ul>
+    </header>
+
+    <section>
+        <div class ="imagenes">
+            <table>
+                <tr>
+                    <td>
+            <ul>
+               <li><img id="img1" class="catalogo" src="Imagenes/GOW5.jpg" alt="Gears of War 4 imagen">
+                <input type="number" id="cantidad1">
+                   1599$
+               </li>
+
+                <li> <img id="img2"  class="catalogo" src="Imagenes/DES.jpg" alt="Imagen Destiny">
+                    <input type="number" id="cantidad2">
+                    899$
+                </li>
+                <li><img id="img3" class="catalogo" src="Imagenes/HALO.jpg" alt="Imagen Halo Reach">
+                <input type="number" id="cantidad3">
+                    299$
+                </li>
+                <li><img id="img4"class="catalogo" src="Imagenes/SH2.jpg" alt="Imagen Shreck 2">
+                <input type="number" id="cantidad4">
+                    350$
+                </li>
+                <li><img id="img5" class="catalogo" src="Imagenes/DBZ.jpg" alt="Imagen DBZ">
+                <input type="number" id="cantidad5">
+                    799$
+                </li>
+            </ul>
+                    <br>
+                    <br>
+                    <div>
+                        <button class="comprar" onclick="comprar()">Comprar</button></li>
+                        <button class="cancelar" onclick="Cancelar()">Cancelar Compra</button></li>
+                    </div>
+
+                        <br>
+                        <br>
+                    
+                        
+                            <td class = "ticket">
+                                <H2>Su ticket de compra es :</H2><br>
+                                    <br>
+                                Videojuego de GOW5<section id="GOW5">
+                                    </section>
+                                <br>
+                                Videojuego de Destiny:<section id="Destiny">
+                                </section>
+                                <br>
+                                Videjuego de Halo Reach:<section id="HaloReach">   
+                                </section>
+                                <br>
+                                Videjuego de Shrek 2:<section id="Shrek2">   
+                                </section>
+                                <br>
+                                Videjuego de Dragon Ball Z:<section id="DragonBallZ">   
+                                </section>
+
+                                <br><br>Total: <section id="Total"></section>
+                            </td>
+                        </tr>
+
+                    </table>
+        </div>
+    </section>
+
+     <footer class="finalfoot">
+        <p> Tool for Developing: Sublime Text </p> 
+
+        <a href="https://www.sublimetext.com/3">
+            <img class="sublime" src="Imagenes/sublime.png" width="30" height="30">
+        </a>
+        
+
+    </footer>
+<script src="Tienda.js"></script>
+</body>
+</html>
