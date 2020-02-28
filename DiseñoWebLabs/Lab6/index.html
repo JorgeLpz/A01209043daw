@@ -30,17 +30,21 @@
    			<div class="col-5">
    				<div class="container-fluid">
    					<div class="row">
-   						<div class="col-8 mx-auto">
+   						<div class="col-6 mx-auto">
    							<!-- Botones para modulos, despues se deberan desplegar conforme js y acceso roles -->
    							<br><br>
-   							<button id="proyecto" type="button" class="btn btn-primary btn-block">Proyectos</button><br><br><div id="nombre_proyecto"></div><br><br>
-   							<button id="reporte" type="button" class="btn btn-primary btn-block"disabled>Reportes</button><br><br><br><br>
-   							<button id="consumible" type="button" class="btn btn-primary btn-block">Material Consumible</button><br><br><div id="consumible_nuevo"></div><br><br>
-   							<button id="mnconsumible" type="button" class="btn btn-primary btn-block"disabled>Material No Consumible</button><br><br><br><br>
-   							<button id="prestamo" type="button" class="btn btn-primary btn-block">Prestamos</button><br><br><div id="registro_prestamo"></div><br><br>
-   							<button id="config" type="button" class="btn btn-primary btn-block" disabled>Configuración</button>
-   							<br><br>
+   							<button id="proyecto" type="button" class="btn btn-primary btn-block boton_desplegar">Proyectos</button><br><br><div id="nombre_proyecto"></div><br><br>
+   							<button id="consumible" type="button" class="btn btn-primary btn-block boton_desplegar">Material Consumible</button><br><br><div id="consumible_nuevo"></div><br><br>
+   							<button id="prestamo" type="button" class="btn btn-primary btn-block boton_desplegar">Prestamos</button><br><br><div id="registro_prestamo"></div><br><br>
    						</div>
+              <div class="col-6 mx-auto">
+                <!-- Botones para modulos, despues se deberan desplegar conforme js y acceso roles -->
+                <br><br>
+                <button id="reporte" type="button" class="btn btn-primary btn-block boton_desplegar"disabled>Reportes</button><br><br><br><br>
+                <button id="mnconsumible" type="button" class="btn btn-primary btn-block boton_desplegar"disabled>Material No Consumible</button><br><br><br><br>
+                <button id="config" type="button" class="btn btn-primary btn-block boton_desplegar" disabled>Configuración</button>
+                <br><br>
+              </div>
    					</div>
    				</div>
    			</div>
@@ -54,11 +58,15 @@
    									<br><h1 class="text-center">Avisos</h1>
    								</div>
    								<div id="container-alert" class=" container" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                  <div id="container-alert-consumible" class=" container container-alert-demo" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                  <div id="container-alert-prestamo" class="container container-alert-demo" ondrop="drop(event)" ondragover="allowDrop(event)"></div>  
-                  <div id="container-alert-demo" class="container-alert-demo" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                  <div id="container-alert-demo" class="container-alert-demo" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                  <div id="container-alert-demo" class="container-alert-demo" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                  <div id="container-alert-consumible" class=" container " ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                  <div id="container-alert-prestamo" class="container " ondrop="drop(event)" ondragover="allowDrop(event)"></div>  
+                  <div id="container-alert-demo" class="container container-alert-demo" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                  <div id="container-alert-demo" class="container container-alert-demo" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                  <div id="container-alert-demo" class="container container-alert-demo" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                  <div id="container-alert-demo" class="container container-alert-demo" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                  <div id="container-alert-demo" class="container container-alert-demo" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                  <div id="container-alert-demo" class="container container-alert-demo" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                  <div id="container-alert-demo" class="container container-alert-demo" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
    						  </div>	
    				  	</div>
    				  </div>
@@ -67,17 +75,6 @@
   	</div>
   </div>
 
-<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-<br>
-<div><img id="drag1" src="img/sublime.png" draggable="true" ondragstart="drag(event)"></div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 <footer>
 	<!-- Web Developing tool-->
 	<p> Tool for Developing: Texto Sublime </p> 

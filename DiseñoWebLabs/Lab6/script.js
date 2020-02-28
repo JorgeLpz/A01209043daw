@@ -36,7 +36,7 @@ function alerta_consumible(){
 function prestar_articulo() {
   let div = document.getElementById("registro_prestamo");
 
-  div.innerHTML = "Cantidad:  <input id=\"numero\" value=\" \"><br> Producto:  <input id=\"descripcion\" value=\" \">Solicitante:  <input id=\"trabajador\" value=\" \">Autoriza:  <input id=\"almacenista\" value=\" \"> <button id=\"boton_prestar\">Registrar</button>";
+  div.innerHTML = "Cantidad:  <input id=\"numero\" value=\" \"><br> Producto:  <input id=\"descripcion\" value=\" \"><br>Solicitante:  <input id=\"trabajador\" value=\" \"><br>Autoriza:  <input id=\"almacenista\" value=\" \"> <button id=\"boton_prestar\">Registrar</button>";
 
   document.getElementById("boton_prestar").onclick = alerta_prestamo;
 }
