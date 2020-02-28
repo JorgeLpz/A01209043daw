@@ -16,7 +16,7 @@
 		<div class="topnav">
   		<!-- Logo Centrado -->
   		<div class="topnav-centered">
-   			 <a href="index.html"><img src="img/logo/logo.png"></a>
+   			 <a href="index.html"><img class="logo img-fluid" src="img/logo/logo.png"></a>
  		</div>
   		<!-- Default alienado a Izquierda -->
   		<a href="preguntas.html">Preguntas</a>
@@ -53,9 +53,12 @@
    									<!--Seccionde Avisos -->
    									<br><h1 class="text-center">Avisos</h1>
    								</div>
-   								<div id="container-alert" class=" container"></div>
-                  <div id="container-alert-consumible" class=" container"></div>
-                  <div id="container-alert-prestamo" class=" container"></div>  
+   								<div id="container-alert" class=" container" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                  <div id="container-alert-consumible" class=" container container-alert-demo" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                  <div id="container-alert-prestamo" class="container container-alert-demo" ondrop="drop(event)" ondragover="allowDrop(event)"></div>  
+                  <div id="container-alert-demo" class="container-alert-demo" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                  <div id="container-alert-demo" class="container-alert-demo" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                  <div id="container-alert-demo" class="container-alert-demo" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
    						  </div>	
    				  	</div>
    				  </div>
@@ -64,7 +67,17 @@
   	</div>
   </div>
 
-
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<br>
+<div><img id="drag1" src="img/sublime.png" draggable="true" ondragstart="drag(event)"></div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <footer>
 	<!-- Web Developing tool-->
 	<p> Tool for Developing: Texto Sublime </p> 
