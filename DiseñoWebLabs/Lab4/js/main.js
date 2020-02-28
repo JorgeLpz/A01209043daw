@@ -12,24 +12,22 @@ A01209043
 function cubo() {
 	//Recibimos un numero por medio de un prompt y asignamos a numero
 	let numero = prompt("Cuantos Numeros Deseas Calcular su Cubo y Cuadrado:");
+	let div = document.getElementById("cubo");
 
 	//Condicion si el numero es mayor a 1, si es menor no hara nada.
 	if (numero >= 1) {
 		//Generamos los encabezados de la tabla
-		document.write("<tr>");
-		document.write("<th>Numero</th> <th>Cuadrado</th> <th>Cubo</th>");
-		document.write("</tr>");
-		document.write("<table>")
+		div.innerHTML = "<tr> <th>Numero</th> <th>Cuadrado</th> <th>Cubo</th></tr><table>"
 
 		//Generamos un ciclo que vaya asignando valores a la tabla
 		for (var i = 1; i <= numero; i++) {
-			document.write("<tr>");
-			document.write("<td>"+i+"</td> "+" <td>"+i*i+" </td>"+"<td> "+i*i*i+"</td>");
-			document.write("</tr>");
+			div.innerHTML = "<tr> <td>"+i+"</td> "+" <td>"+i*i+" </td>"+"<td> "+i*i*i+"</td></tr>"
 		}
-		document.write("</table>")
+		div.innerHTML = "</table>"
 	}
 }
+
+document.getElementById("tabla").onclick = cubo;
 
 // Ejercicio 2
 function suma() {
