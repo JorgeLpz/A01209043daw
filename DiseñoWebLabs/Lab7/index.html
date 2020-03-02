@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>A01209043</title>
+
+	<!--Stylesheets-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+</head>
+<body>
+	<!-- Navegación Incluye las Preguntas -->
+	<nav class="sticky-top">
+  		<!-- Boostrap Nav -->
+		<div class="topnav">
+  		<!-- Logo Centrado -->
+  		<div class="topnav-centered">
+   			 <a href="index.html"><img class="logo img-fluid" src="img/logo/logo.png"></a>
+ 		</div>
+  		<!-- Default alienado a Izquierda -->
+  		<a href="preguntas.html">Preguntas</a>
+		</div>
+	</nav>
+	<!-- Termina Navegación-->
+
+	<!-- Seccion de Pagina Principal -->
+	<div class="container-fluid">
+  		<div class="row">
+   			<div class="col-5">
+   				<div class="container-fluid">
+   					<div class="row">
+   						<div class="col-6 mx-auto">
+   							<!-- Botones para modulos, despues se deberan desplegar conforme js y acceso roles -->
+   							<br><br>
+   							<button id="proyecto" type="button" class="btn btn-primary btn-block boton_desplegar">Proyectos</button><br><br><div id="nombre_proyecto"></div><br><br>
+   							<button id="consumible" type="button" class="btn btn-primary btn-block boton_desplegar">Material Consumible</button><br><br><div id="consumible_nuevo"></div><br><br>
+   							<button id="prestamo" type="button" class="btn btn-primary btn-block boton_desplegar">Prestamos</button><br><br><div id="registro_prestamo"></div><br><br>
+   						</div>
+              <div class="col-6 mx-auto">
+                <!-- Botones para modulos, despues se deberan desplegar conforme js y acceso roles -->
+                <br><br>
+                <button id="reporte" type="button" class="btn btn-primary btn-block boton_desplegar"disabled>Reportes</button><br><br><br><br>
+                <button id="mnconsumible" type="button" class="btn btn-primary btn-block boton_desplegar"disabled>Material No Consumible</button><br><br><br><br>
+                <button id="config" type="button" class="btn btn-primary btn-block boton_desplegar" disabled>Configuración</button>
+                <br><br>
+              </div>
+   					</div>
+   				</div>
+   			</div>
+   			<div class="col-7">
+   				<div class="container-fluid">
+   					<div class="row">
+   						<div class="col-9 mx-auto">
+   							<div class="container-fluid">
+   								<div class="mx-auto">
+   									<!--Seccionde Avisos -->
+   									<br><h1 class="text-center">Avisos</h1>
+   								</div>
+   								<div id="container-alert" class=" container" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                  <div id="container-alert-consumible" class=" container " ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                  <div id="container-alert-prestamo" class="container " ondrop="drop(event)" ondragover="allowDrop(event)"></div>  
+                  <div id="container-alert-demo" class="container container-alert-demo" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                  <div id="container-alert-demo" class="container container-alert-demo" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                  <div id="container-alert-demo" class="container container-alert-demo" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                  <div id="container-alert-demo" class="container container-alert-demo" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                  <div id="container-alert-demo" class="container container-alert-demo" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                  <div id="container-alert-demo" class="container container-alert-demo" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                  <div id="container-alert-demo" class="container container-alert-demo" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+   						  </div>	
+   				  	</div>
+   				  </div>
+   			  </div>
+   		  </div>
+  	</div>
+  </div>
+
+<footer>
+	<!-- Web Developing tool-->
+	<p> Tool for Developing: Texto Sublime </p> 
+	<a href="https://www.sublimetext.com/3" target="_blank"><img class="sublime" src="img/sublime.png" alt="Sublime Text"></a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
