@@ -1,0 +1,41 @@
+CREATE TABLE Producto (
+    id_producto int (5) NOT NULL,
+    tipo varchar (20) NOT NULL,
+    descripcion varchar (50) NOT NULL,
+    cantidad int (5) NOT NULL,
+    precio float (10) NOT NULL,
+    PRIMARY KEY (id_producto)
+);
+
+CREATE TABLE Estatus (
+    id_estatus int (5) NOT NULL,
+    nombre varchar (50) NOT NULL,
+    PRIMARY KEY (id_estatus)
+);
+
+CREATE TABLE Marca (
+    id_marca int (5) NOT NULL,
+    nombre varchar (50) NOT NULL,
+    modelo varchar (50),
+    PRIMARY KEY (id_marca)
+    );
+    
+CREATE TABLE TipoProducto (
+    id_tipo int (5) NOT NULL,
+    nombre varchar (50) NOT NULL,
+    PRIMARY KEY (id_tipo)
+    );
+    
+    
+CREATE TABLE ProductoTiene (
+    id_estatus int (5) NOT NULL,
+    id_producto int (5) NOT NULL,
+    id_tipo int (5) NOT NULL,
+    id_marca int (5) NOT NULL,
+    fecha DateTime (6) NOT NULL,
+    FOREIGN KEY (id_producto) REFERENCES Producto(id_producto),
+    FOREIGN KEY (id_estatus) REFERENCES Estatus(id_estatus),
+    FOREIGN KEY (id_tipo) REFERENCES TipoProducto(id_tipo),
+    FOREIGN KEY (id_marca) REFERENCES Marca(id_marca)
+    );
+    
