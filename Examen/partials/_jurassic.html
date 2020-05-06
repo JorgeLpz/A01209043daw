@@ -1,0 +1,68 @@
+
+
+        <div class="container">
+
+            <h3>Bienvenido a Jurassic Park</h3><br><br>
+
+            <div class="row">
+			    <div class="col s12">
+			      <ul class="tabs">
+			        <li class="tab col s3"><a href="#test1">Incidentes en Lugares</a></li>
+			       
+			        <li class="tab col s3"><a href="#test2">Buscar por Incidente</a></li>
+
+			        <li class="tab col s3"><a href="#test3">Historial de Incidentes</a></li>
+			      </ul>
+			    </div>
+
+			    <!--TEST1-->
+			    <div id="test1" class="col s12"><br><a href="controlador_agregar_lugar.php" title="Agregar nuevo luagar" class="right btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a><?= consultarTabla(); ?></div>
+			    <!--TEST2-->
+			    <div id="test2" class="col s12">
+			    	<br>
+			    	<div class="row">
+			    		<div class="input-field col s6">
+			    			<?=consultar_select("id", "nombre", "incidente");?>
+			    		<div class="input-field col s3">
+			    			<button id="buscar" class="btn">Buscar</button>
+			    		</div>
+
+			    	<?php
+			    		if (isset($_POST["incidente"])) {
+	    				$incidente = htmlspecialchars($_POST["incidente"]);
+	   					} else {
+	    					$incidente = 1;
+	    				}
+	    			?>
+	    			<div id="resultados_consulta_incidente"><?=consultarBusquedaIncidente($incidente);?><br></div>
+	    		
+			    		</div>
+			  		</div>
+        		</div>
+        		<!--TEST3-->
+			    <div id="test3" class="col s12">
+			    	<br>
+			    	<div class="row">
+			    		<div class="input-field col s6">
+			    			<?=consultar_select("id", "nombre", "lugar");?>
+			    		<div class="input-field col s3">
+			    			<button id="buscarlugar" class="btn">Buscar</button>
+			    		</div>
+
+			    	<?php
+			    		if (isset($_POST["lugar"])) {
+	    				$lugar = htmlspecialchars($_POST["lugar"]);
+	   					} else {
+	    					$lugar = "";
+	    				}
+	    			?>
+	    			<div id="resultados_consulta_lugar"><?= consultarBusquedaHistorial($lugar);?><br></div>
+	    		
+			    		</div>
+			  		</div>
+
+			    </div>
+        </div>
+    </div>
+  
+  <br>
